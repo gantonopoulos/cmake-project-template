@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.2)
 
-project(${{PROJECT_NAME}})
+set(PROJECT_NAME ${{PROJECT_NAME}})
+project(${PROJECT_NAME})
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -O3")
